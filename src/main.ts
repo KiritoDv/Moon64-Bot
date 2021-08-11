@@ -82,7 +82,7 @@ async function initBot() {
     listeners = db.get("listeners", [])
 
     client.on('ready', () => {
-        setInterval(updateData, 10 * 1000)
+        setInterval(updateData, 5 * 60 * 1000)
         console.log("Connected!")
     })
 
