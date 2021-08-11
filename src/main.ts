@@ -6,6 +6,7 @@ import { Client, Intents, Message, MessageEmbed, TextChannel } from 'discord.js'
 import { join } from 'path'
 
 const client = new Client({ intents: [ Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES ] })
+const token = ""
 
 var listeners: string[];
 
@@ -125,7 +126,7 @@ async function initBot() {
         }
     })
 
-    await client.login("ODU2NzE3MTUzNDMxNDUzNzE2.YNFGBg.kq_GyadW0pUQ5j5WUaE748oBF-I")
+    await client.login(token)
 }
 
 initBot()
